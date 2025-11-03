@@ -61,7 +61,7 @@ public class RetweetServiceImpl implements RetweetService{
         Retweet retweet = retweetRepository.findByTweetAndUser(tweet, user)
                 .orElseThrow(() -> new RuntimeException("Retweet bulunamadı!"));
 
-        retweetRepository.delete(retweet);
+        retweetRepository.delete(retweet); //x
     }
 
     @Override
