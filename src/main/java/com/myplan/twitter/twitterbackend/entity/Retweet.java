@@ -24,7 +24,8 @@ public class Retweet {
     private String comment;
 
     @Column(name = "created_at",nullable = false)
-        private Instant cratedAt = Instant.now();
+        private Instant createdAt = Instant.now();
+
 
 
     @ManyToOne(fetch = FetchType.LAZY)
