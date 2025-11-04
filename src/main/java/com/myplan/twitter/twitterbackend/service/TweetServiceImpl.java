@@ -38,8 +38,8 @@ public class TweetServiceImpl implements TweetService{
     }
 
     @Override
-    public List<Tweet> getTweetsByUser(Long UserId) {
-        User user = userRepository.findById(UserId).orElseThrow(()-> new RuntimeException("Kullanıcı bulunamadı"));
+    public List<Tweet> getTweetsByUser(Long userId) {
+        User user = userRepository.findById(userId).orElseThrow(()-> new RuntimeException("Kullanıcı bulunamadı"));
         return tweetRepository.findByUser(user);
     }
 

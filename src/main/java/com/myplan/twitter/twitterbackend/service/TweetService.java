@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface TweetService {
     Tweet createTweet(Long userId,String content);
-    List<Tweet> getTweetsByUser(Long UserId);
+    List<Tweet> getTweetsByUser(Long userId);
     Tweet getTweetById(Long id);
     Tweet updateTweet(Long id,Long currentUserId,String content);
     void deleteTweet(Long id,Long currentUserId);

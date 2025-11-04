@@ -71,6 +71,7 @@ public class RetweetServiceImpl implements RetweetService{
         return retweetRepository.findByUser(user);
     }
 
+    @Override
     public List<Retweet> getRetweetsByTweet(Long tweetId) {
         Tweet tweet = tweetRepository.findById(tweetId)
                 .orElseThrow(() -> new RuntimeException("Tweet bulunamadı!"));
