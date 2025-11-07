@@ -9,7 +9,7 @@ public interface RetweetService {
     Retweet retweet(Long userId, Long tweetId);
 
 
-    void undoRetweet(Long userId, Long tweetId);
+    void unretweet(Long userId, Long tweetId);
 
 
     List<Retweet> getRetweetsByUser(Long userId);
